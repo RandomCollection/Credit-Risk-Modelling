@@ -1,0 +1,65 @@
+site_name: Credit Risk Modelling
+site_description: Credit Risk Modelling is a Python library providing a curated selection of modules to perform credit risk modelling analytics.
+site_author: RandomCollection
+site_url: https://github.com/RandomCollection
+repo_name: GitHub
+repo_url: https://github.com/RandomCollection/Credit-Risk-Modelling
+copyright: Copyright &copy; 2024 RandomCollection
+
+theme:
+  features:
+    - tabs
+  name: material
+  favicon: img/icon.svg
+  icon:
+    logo: material/cactus  # icons are in "...\site-packages\material\templates\.icons\fontawesome\brands"
+  palette:
+    primary: indigo
+    accent: deep purple
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+
+plugins:
+- search
+- markdown-exec
+- mkdocstrings:
+    handlers:
+      python:
+        options:
+          show_source: false  # removes the source code
+
+nav:
+  - Home: index.md
+  - Instructions: instructions.md
+  - Credit Risk Modelling:
+    - Calibration: calibration.md
+    - Discrimination: discrimination.md
+    - Formatting: formatting.md
+    - Frequency: frequency.md
+    - Migration: migration.md
+    - Override: override.md
+    - Plotting: plotting.md
+    - Stability: stability.md
+    - Other: other.md
+
+markdown_extensions:
+  - md_in_html
+  - pymdownx.arithmatex
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/RandomCollection
